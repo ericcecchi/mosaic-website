@@ -11,6 +11,11 @@ import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", type: "image/png", media: "(prefers-color-scheme: light)", href: "/favicon.png" },
+  { rel: "icon", type: "image/png", media: "(prefers-color-scheme: dark)", href: "/favicon-dark.png" },
+  { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+  { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+  { rel: "manifest", href: "/site.webmanifest" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
