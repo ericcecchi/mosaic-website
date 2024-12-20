@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   icons: {
-    apple: "/images/apple-touch-icon.png",
-    icon: "/images/favicon.png",
+    apple: "/apple-touch-icon.png",
+    icon: "/favicon.png",
   },
 };
 
