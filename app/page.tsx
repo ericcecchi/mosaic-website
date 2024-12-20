@@ -1,8 +1,9 @@
 "use server";
 
 import Image from "next/image";
-import { Button } from "../components/button";
+import { Button } from "@/components/button";
 import NextLink from "next/link";
+import { Link } from "@/components/link";
 
 export default async function Home() {
   return (
@@ -20,12 +21,12 @@ export default async function Home() {
             />
           </NextLink>
           <div className="flex space-x-6">
-            <NextLink href="/about" variant="inverse">
+            <Link href="/about" variant="inverse">
               About
-            </NextLink>
-            <NextLink href="/strategy" variant="inverse">
+            </Link>
+            <Link href="/strategy" variant="inverse">
               Strategy
-            </NextLink>
+            </Link>
           </div>
           <Button asChild variant="primary" size="sm">
             <NextLink href="/contact-us">Contact Us</NextLink>
