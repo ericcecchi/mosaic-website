@@ -11,8 +11,18 @@ import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "icon", type: "image/png", media: "(prefers-color-scheme: light)", href: "/favicon.png" },
-  { rel: "icon", type: "image/png", media: "(prefers-color-scheme: dark)", href: "/favicon-dark.png" },
+  {
+    rel: "icon",
+    type: "image/png",
+    media: "(prefers-color-scheme: light)",
+    href: "/favicon.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    media: "(prefers-color-scheme: dark)",
+    href: "/favicon-dark.png",
+  },
   { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
   { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
   { rel: "manifest", href: "/site.webmanifest" },
@@ -24,7 +34,7 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap",
   },
   { rel: "stylesheet", href: stylesheet },
 ];

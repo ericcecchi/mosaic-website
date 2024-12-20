@@ -1,4 +1,5 @@
-import type { Route } from "./+types/home";
+import { Link } from "@/components/link";
+import { Button } from "@/components/Button";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -46,49 +47,43 @@ export default function Home() {
   return (
     <main>
       <header className="bg-indigo-900 text-white">
-        <nav className="flex justify-between items-center p-8">
-          <a href="/" className="flex items-center">
+        <nav className="flex justify-between items-center md:p-8 p-6 flex-wrap gap-6">
+          <Link to="/" className="flex items-center">
             <img
               src="/images/logo.png"
               alt="Mosaic Consulting"
-              className="h-6 w-auto"
+              className="h-6 w-auto flex-0"
             />
-          </a>
+          </Link>
           <div className="flex space-x-6">
-            <a href="/about" className="hover:underline">
+            <Link to="/about" variant="inverse">
               About
-            </a>
-            <a href="/strategy" className="hover:underline">
+            </Link>
+            <Link to="/strategy" variant="inverse">
               Strategy
-            </a>
+            </Link>
           </div>
-          <a
-            href="/contact-us"
-            className="bg-white text-indigo-900 px-4 py-2 rounded-full"
-          >
-            Contact Us
-          </a>
+          <Button asChild variant="primary" size="sm">
+            <RRLink to="/contact-us">Contact Us</RRLink>
+          </Button>
         </nav>
 
-        <section className="py-16 p-4 container mx-auto flex items-center">
-          <div className="w-1/2 pr-12">
-            <h1 className="text-7xl font-bold">
+        <section className="py-16 p-4 container mx-auto md:flex items-center">
+          <div className="md:w-1/2 md:pr-12 pb-12 md:pb-0">
+            <h1 className="text-5xl lg:text-7xl leading-tight font-semibold">
               Equipping leaders and teams to build inclusive culture
             </h1>
-            <p className="text-2xl my-6">
+            <p className="text-2xl font-light leading-relaxed my-6">
               Mosaic provides cultural agility training through customized
               roadmaps—including team workshops, individual coaching, and team
               and leadership development crash courses.
             </p>
-            <a
-              href="/contact-us"
-              className="bg-white text-indigo-900 px-6 py-4 rounded-full mt-4 inline-block"
-            >
-              Schedule a free consultation
-            </a>
+            <Button asChild variant="inverse" size="lg">
+              <RRLink to="/contact-us">Schedule a free consultation</RRLink>
+            </Button>
           </div>
 
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <img
               src="/images/abstract+mosaic+background+2007.png"
               alt="Equipping leaders and teams to build inclusive culture"
