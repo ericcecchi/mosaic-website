@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <main>
       <header className="bg-indigo-900 text-white">
-        <nav className="flex items-center md:p-8 -6 flex-wrap gap-12">
+        <nav className="sm:flex items-center md:p-8 p-6 flex-wrap gap-12">
           <NextLink href="/" className="flex items-center">
             <Image
               priority
@@ -20,7 +20,7 @@ export default async function Home() {
               className="h-6 w-auto flex-0"
             />
           </NextLink>
-          <div className="flex-1 flex justify-between items-center flex-wrap gap-6">
+          <div className="flex-1 flex justify-between items-center flex-wrap gap-6 mt-4 sm:mt-0">
             <div className="flex space-x-6">
               <Link href="/about" variant="inverse">
                 About
