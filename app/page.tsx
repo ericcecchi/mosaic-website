@@ -1,8 +1,10 @@
+"use server";
+
 import Image from "next/image";
 import { Button } from "../components/button";
 import NextLink from "next/link";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <header className="bg-indigo-900 text-white">
