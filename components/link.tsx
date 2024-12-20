@@ -1,7 +1,7 @@
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "cva";
 import type { ComponentProps } from "react";
-import { cn } from "../app/util/classnames";
+import { cn } from "../lib/classnames";
 import NextLink from "next/link";
 
 const linkVariants = cva({
@@ -10,7 +10,7 @@ const linkVariants = cva({
     variant: {
       primary: "text-indigo-900 dark:text-indigo-100",
       inverse: "text-white",
-      muted: "text-gray-900/40 dark:text-gray-100/40",
+      muted: "text-stone-900/40 dark:text-stone-100/40",
     },
   },
   defaultVariants: { variant: "primary" },
