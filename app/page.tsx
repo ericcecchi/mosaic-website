@@ -3,41 +3,15 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import NextLink from "next/link";
-import { Link } from "@/components/link";
+import Section from "@/components/section";
+import { MainFooter } from "../components/sections/main-footer";
+import { Hero } from "../components/sections/hero";
 
 export default async function Home() {
   return (
     <main>
-      <header className="bg-indigo-900 text-white">
-        <nav className="sm:flex items-center md:p-8 p-6 flex-wrap gap-12">
-          <NextLink href="/" className="flex items-center">
-            <Image
-              priority
-              width={1500}
-              height={200}
-              src="/images/logo.png"
-              alt="Mosaic Consulting"
-              className="h-6 w-auto flex-0"
-            />
-          </NextLink>
-          <div className="flex-1 flex justify-between items-center flex-wrap gap-6 mt-4 sm:mt-0">
-            <div className="flex space-x-6">
-              <Link href="/about" variant="inverse">
-                About
-              </Link>
-              <Link href="/strategy" variant="inverse">
-                Strategy
-              </Link>
-            </div>
-            <div className="flex space-x-6">
-              <Button asChild size="sm">
-                <NextLink href="/contact-us">Contact Us</NextLink>
-              </Button>
-            </div>
-          </div>
-        </nav>
-
-        <section className="pb-16 p-6 container mx-auto md:flex items-center">
+      <Hero>
+        <div className="md:flex items-center">
           <div className="md:w-2/3 md:pr-12 pb-12 md:pb-0 text-balance">
             <h1 className="text-5xl lg:text-7xl font-semibold">
               Equipping leaders and teams to build inclusive culture
@@ -64,10 +38,10 @@ export default async function Home() {
               className="w-full"
             />
           </div>
-        </section>
-      </header>
+        </div>
+      </Hero>
 
-      <section className="py-16 px-6 bg-muted space-y-6">
+      <Section variant="muted" spacing="tight">
         <p className="text-3xl font-light leading-relaxed text-center max-w-prose mx-auto text-balance">
           Mosaic trains individuals and teams to interpret and respond to the
           culturally defined behaviors of others, equipping them to build
@@ -81,9 +55,9 @@ export default async function Home() {
             </NextLink>
           </Button>
         </p>
-      </section>
+      </Section>
 
-      <section className="py-16 px-6 bg-stone-3000 space-y-6">
+      <Section variant="white">
         <h2 className="text-4xl font-semibold text-center text-stone-900">
           Some of Our Clients
         </h2>
@@ -119,9 +93,9 @@ export default async function Home() {
             alt="The University of Minnesota"
           />
         </div>
-      </section>
+      </Section>
 
-      <section className="py-16 px-6 bg-muted space-y-12">
+      <Section variant="muted">
         <h2 className="text-4xl font-semibold text-center">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center container mx-auto text-pretty">
           <div className="space-y-4">
@@ -189,9 +163,9 @@ export default async function Home() {
             <NextLink href="/strategy">Learn more about our strategy</NextLink>
           </Button>
         </p>
-      </section>
+      </Section>
 
-      <section className="py-16 px-6 bg-white text-stone-900 space-y-12">
+      <Section variant="white">
         <h2 className="text-4xl font-semibold text-center">
           Providing Certified Training in
         </h2>
@@ -210,9 +184,9 @@ export default async function Home() {
             alt="Certified in Intercultural Development Inventory (IDI) training"
           />
         </div>
-      </section>
+      </Section>
 
-      <section className="py-16 px-6 bg-stone-800 text-stone-50">
+      <Section variant="dark">
         <div className="container mx-auto space-y-12">
           <h2 className="text-xl font-semibold ">What People Are Saying</h2>
 
@@ -242,7 +216,9 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
+
+      <MainFooter />
     </main>
   );
 }
