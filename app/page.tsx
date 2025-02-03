@@ -169,7 +169,7 @@ export default async function Home() {
         <h2 className="text-4xl font-semibold text-center">
           Providing Certified Training in
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-5xl mx-auto">
           <Image
             width={320}
             height={104}
@@ -182,6 +182,13 @@ export default async function Home() {
             height={128}
             src="/images/clients/IDI+Logo+(Wide).png"
             alt="Certified in Intercultural Development Inventory (IDI) training"
+          />
+
+          <Image
+            width={256}
+            height={256}
+            src="/images/clients/21-0012_RecertificationProvider_V1_600_suyjlk_q95ys01.png"
+            alt="SHRM Recertification Provider"
           />
         </div>
       </Section>
