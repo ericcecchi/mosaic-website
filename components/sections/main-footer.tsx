@@ -23,7 +23,9 @@ export async function MainFooter() {
                     <Link href="/strategy">Strategy</Link>
                   </li>
                   <li>
-                    <Link href="/contact-us">Contact Us</Link>
+                    <Link href="https://learn.mosaicconsultingservices.com/free-consultation">
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </div>
