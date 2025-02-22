@@ -17,12 +17,12 @@ export default async function Home() {
               Equipping leaders and teams to build inclusive culture
             </h1>
             <p className="text-2xl font-light leading-relaxed my-6">
-              Mosaic provides cultural agility training through customized
-              roadmaps—including team workshops, individual coaching, and team
-              and leadership development crash courses.
+              Mosaic provides cultural agility training through team workshops,
+              individual coaching, and team and leadership development crash
+              courses.
             </p>
             <Button asChild variant="outline" size="lg">
-              <NextLink href="/contact-us">
+              <NextLink href="https://learn.mosaicconsultingservices.com/free-consultation">
                 Schedule a free consultation
               </NextLink>
             </Button>
@@ -50,9 +50,7 @@ export default async function Home() {
         </p>
         <p className="mx-auto text-center">
           <Button asChild size="lg">
-            <NextLink href="/strategy">
-              Learn more about cultural agility
-            </NextLink>
+            <NextLink href="/strategy">Learn about cultural agility</NextLink>
           </Button>
         </p>
       </Section>

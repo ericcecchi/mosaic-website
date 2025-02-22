@@ -11,7 +11,9 @@ export async function MainCta() {
         <p className="text-2xl">Your first consultation is free.</p>
 
         <Button asChild size="lg" variant="secondary">
-          <NextLink href="/contact-us">Schedule a free consultation</NextLink>
+          <NextLink href="https://learn.mosaicconsultingservices.com/free-consultation">
+            Schedule a free consultation
+          </NextLink>
         </Button>
       </div>
     </Section>
