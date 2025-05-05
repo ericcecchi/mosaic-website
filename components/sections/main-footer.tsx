@@ -57,6 +57,12 @@ export async function MainFooter() {
                 Mosaic Consulting Services has obtained a license to use the
                 IDI® from IDI, LLC.
               </p>
+
+              <p>
+                Mosaic Consulting Services is recognized by SHRM to offer Professional Development Credits (PDCs)
+                for SHRM-CP® or SHRM-SCP®. For more information about certification or recertification, please visit
+                <Link href="https://www.shrm.org/certification" className="ml-1">www.shrm.org/certification</Link>.
+              </p>
             </div>
           </div>
         </footer>

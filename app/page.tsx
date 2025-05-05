@@ -156,12 +156,24 @@ export default async function Home() {
             alt="Certified in Intercultural Development Inventory (IDI) training"
           />
 
-          <Image
-            width={256}
-            height={256}
-            src="/images/clients/21-0012_RecertificationProvider_V1_600_suyjlk_q95ys01.png"
-            alt="SHRM Recertification Provider"
-          />
+          <NextLink href="https://www.credly.com/badges/65f8b891-9997-4c0b-9eed-ffa3a1e503ef/public_url" target="_blank" rel="noopener noreferrer">
+            <div className="overflow-hidden" style={{ width: '256px', height: '256px' }}>
+              <Image
+                width={266}
+                height={266}
+                src="/images/shrm-certification-badge-new.png"
+                alt="SHRM Recertification Provider"
+                className="transition-transform hover:scale-105"
+                style={{
+                  border: 'none',
+                  objectFit: 'cover',
+                  margin: '-5px',
+                  width: 'calc(100% + 10px)',
+                  height: 'calc(100% + 10px)'
+                }}
+              />
+            </div>
+          </NextLink>
         </div>
       </Section>
 
