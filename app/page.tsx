@@ -14,27 +14,24 @@ export default async function Home() {
         <div className="md:flex items-center">
           <div className="md:w-2/3 md:pr-12 pb-12 md:pb-0 text-balance">
             <h1 className="text-5xl lg:text-7xl font-semibold">
-              Equipping leaders and teams to build inclusive culture
+              Organizational culture by design
             </h1>
             <p className="text-2xl font-light leading-relaxed my-6">
-              Mosaic provides cultural agility training through team workshops,
-              individual coaching, and team and leadership development crash
-              courses.
+              Mosaic equips leaders and teams to build workplace culture that fosters belonging, drives retention, and aligns with your core values.
             </p>
             <Button asChild variant="outline" size="lg">
               <NextLink href="https://learn.mosaicconsultingservices.com/free-consultation">
-                Schedule a free consultation
+                Let’s design together
               </NextLink>
             </Button>
           </div>
-
           <div className="md:w-1/3">
             <Image
               priority
               width={752}
               height={911}
               src="/images/abstract-mosaic-background.png"
-              alt="Equipping leaders and teams to build inclusive culture"
+              alt="Organizational culture by design"
               className="w-full"
             />
           </div>
@@ -43,15 +40,7 @@ export default async function Home() {
 
       <Section variant="muted" spacing="tight">
         <p className="text-3xl font-light leading-relaxed text-center max-w-prose mx-auto text-balance">
-          Mosaic trains individuals and teams to interpret and respond to the
-          culturally defined behaviors of others, equipping them to build
-          inclusive communities where humanity is honored and diversity is
-          celebrated.
-        </p>
-        <p className="mx-auto text-center">
-          <Button asChild size="lg">
-            <NextLink href="/strategy">Learn about cultural agility</NextLink>
-          </Button>
+          Mosaic trains individuals and teams to understand what culture is, how it’s built, and how to navigate culturally defined behaviors. This work builds inclusive workplaces where humanity is honored and diversity is celebrated.
         </p>
       </Section>
 
@@ -94,7 +83,7 @@ export default async function Home() {
       </Section>
 
       <Section variant="muted">
-        <h2 className="text-4xl font-semibold text-center">Our Services</h2>
+        <h2 className="text-4xl font-semibold text-center">What We Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center container mx-auto text-pretty">
           <div className="space-y-4">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
@@ -108,11 +97,7 @@ export default async function Home() {
             </div>
             <h3 className="text-2xl font-semibold">Training</h3>
             <p className="text-lg">
-              Whether through a workshop, webinar, or crash course, we train you
-              to learn what culture is and how it influences you and your
-              community. We then train you how to move from this place of
-              awareness to a place where you intentionally create diverse and
-              inclusive communities.
+              Workshops, webinars, and crash courses that help individuals and teams understand what organizational culture is and how it is shaped. We move you from awareness to action, equipping you to build inclusive workplace environments where everyone belongs.
             </p>
           </div>
 
@@ -128,9 +113,7 @@ export default async function Home() {
             </div>
             <h3 className="text-2xl font-semibold">Coaching</h3>
             <p className="text-lg">
-              Using tools like the IDI assessment, we provide one-on-one
-              cultural agility coaching to ensure you feel competent to engage
-              the intercultural spaces you find yourself in.
+              One-on-one interpersonal agility coaching using tools like the Intercultural Development Inventory (IDI) to grow self-awareness, confidence, and responsiveness in diverse spaces. Designed for leaders and individuals navigating teams with varied lived experiences and multicultural environments.
             </p>
           </div>
 
@@ -145,22 +128,13 @@ export default async function Home() {
               />
             </div>
             <h3 className="text-2xl font-semibold">
-              Leadership & team development
+              Leadership & Team Development
             </h3>
             <p className="text-lg">
-              Research shows that diverse, inclusive, and culturally agile teams
-              have greater productivity, performance, and profitability. We
-              teach your leadership team how to leverage its position and power,
-              and move together towards organizational inclusivity.
+              We help leaders build team culture that enhances the employee experience and strengthens retention. By aligning organizational values and practices, we equip teams to deepen trust, foster belonging, and create a culture where people feel seen, valued, and committed.
             </p>
           </div>
         </div>
-
-        <p className="mx-auto text-center">
-          <Button asChild size="lg">
-            <NextLink href="/strategy">Learn more about our strategy</NextLink>
-          </Button>
-        </p>
       </Section>
 
       <Section variant="white">
